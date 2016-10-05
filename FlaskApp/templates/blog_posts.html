@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>My Blog Posts!</h1>
+  <div align="center">
+  {% for post in posts %}
+    <h2><a href={{"_".join(post[0].title.split())}}>{{post[0].title}}</a></h2>   /{{post[1].strip()}}/
+<div class="space"></div>
+  {% endfor %}
+  </div>
+{% endblock %}

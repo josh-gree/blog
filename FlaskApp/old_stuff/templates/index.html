@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Conway's Game of Life</title>
+
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="{{ url_for('static', filename = 'coffee-script.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'lifeforce.coffee') }}" type="text/coffeescript"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    <p id="button-row1">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="restart">Clear</button>
+      <button id="rand">Random</button>
+    </p>
+  	<canvas id="life" width="1220" height="620">Your browser does not support canvas.</canvas>
+  </div>
+
+</body>
+</html>

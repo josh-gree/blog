@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block js %}
+  {% for src in jss %}
+  <script type="text/coffeescript" src= "{{url_for('static',filename='posts/' + '_'.join(title.split()) + '/' + src)}}"></script>
+  {% endfor %}
+{% endblock %}
+
+{% block content %}
+  <h1>{{title}}</h1>
+  {{ content | safe}}
+  </br>
+  </br>
+  <div id="nav">
+      <a href="{{url_for('blog_posts')}}">Other Blog Posts</a>
+  </div>
+{% endblock %}

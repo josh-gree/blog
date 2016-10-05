@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>A selection of Randomness...</h1>
+  {% for rand in rands %}
+  <div align="center">
+  {{rand.tag|safe}}
+</br>
+  /{{rand.description.strip() | safe}}/
+  </div>
+  <div class="space"></div>
+  {% endfor %}
+{% endblock %}

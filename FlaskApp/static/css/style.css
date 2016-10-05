@@ -1,0 +1,320 @@
+.help {
+    line-height: 2em;
+    word-spacing: 0.1em;
+    font-size: 120%;
+    text-align: center;
+    /*font-size: large;*/
+}
+
+@font-face {font-family: "Courier New";
+    src: url("//db.onlinewebfonts.com/t/72c75860d89e91a517dfb1e7d308c180.eot");
+    src: url("//db.onlinewebfonts.com/t/72c75860d89e91a517dfb1e7d308c180.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/72c75860d89e91a517dfb1e7d308c180.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/72c75860d89e91a517dfb1e7d308c180.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/72c75860d89e91a517dfb1e7d308c180.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/72c75860d89e91a517dfb1e7d308c180.svg#Courier New") format("svg");
+}
+
+
+@font-face {font-family: "Typewriter";
+    src: url("//db.onlinewebfonts.com/t/8c74fa4a77aabeef0fbd4423f28264e9.eot");
+    src: url("//db.onlinewebfonts.com/t/8c74fa4a77aabeef0fbd4423f28264e9.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8c74fa4a77aabeef0fbd4423f28264e9.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/8c74fa4a77aabeef0fbd4423f28264e9.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/8c74fa4a77aabeef0fbd4423f28264e9.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/8c74fa4a77aabeef0fbd4423f28264e9.svg#MomsTypewriter") format("svg");
+}
+
+/*@font-face {font-family: "Courier New";
+    src: url("//db.onlinewebfonts.com/t/47eea0aee6a658d70341a2ccc25bb819.eot");
+    src: url("//db.onlinewebfonts.com/t/47eea0aee6a658d70341a2ccc25bb819.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/47eea0aee6a658d70341a2ccc25bb819.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/47eea0aee6a658d70341a2ccc25bb819.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/47eea0aee6a658d70341a2ccc25bb819.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/47eea0aee6a658d70341a2ccc25bb819.svg#Courier New") format("svg");
+}*/
+
+#tooltip_lab {
+position: absolute;
+width: 245px;
+height: auto;
+padding: 10px;
+background-color: white;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+pointer-events: none;
+}
+
+#tooltip_lab.hidden {
+      display: none;
+}
+
+#tooltip_lab p {
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+}
+
+#tooltip_con {
+position: absolute;
+width: 245px;
+height: auto;
+padding: 10px;
+background-color: white;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+pointer-events: none;
+}
+
+#tooltip_con.hidden {
+      display: none;
+}
+
+#tooltip_con p {
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+}
+
+#tooltip_libdem {
+position: absolute;
+width: 245px;
+height: auto;
+padding: 10px;
+background-color: white;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+pointer-events: none;
+}
+
+#tooltip_libdem.hidden {
+      display: none;
+}
+
+#tooltip_libdem p {
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+}
+
+.space { margin-top: 80px; }
+.rands { width: 40%; }
+
+img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+body {
+    font-family: "Courier New",monospace;
+    background-color: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: black;
+    width: 80%;
+}
+
+h1 {
+    font-family: "Typewriter",monospace;
+    text-align: center;
+    margin-bottom: 100px;
+    text-decoration: underline;
+}
+
+h2 {
+   font-family: "Typewriter",monospace;
+}
+
+p {
+    line-height: 2em;
+    word-spacing: 0.1em;
+    text-align: justify;
+    font-size: 120%;
+    /*font-size: large;*/
+}
+
+a:link {
+    font-weight: bold;
+    color: #3A3332;
+}
+
+a:visited {
+    font-weight: normal;
+    color: #3A3332;
+}
+
+#header h1 {
+    text-align: left;
+    margin-bottom: 1%;
+    text-decoration: none;
+}
+
+#header {
+    margin-bottom: 150px;
+}
+
+#posts {
+    margin-bottom: 100px;
+    width: 50%;
+    line-height: 1.5em;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0em;
+    color: #383a42;
+    background: white;
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: #a0a1a7;
+    font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+    color: #a626a4;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+    color: #e45649;
+}
+
+.hljs-literal {
+    color: #0184bb;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+    color: #50a14f;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+    color: #c18401;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+    color: #986801;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+    color: #4078f2;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-link {
+    text-decoration: underline;
+}
+
+.youtube-player {
+    position: relative;
+    padding-bottom: 56.23%;
+    /* Use 75% for 4:3 videos */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 5px;
+}
+
+.youtube-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+}
+
+.youtube-player img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all;
+}
+
+.youtube-player img:hover {
+    -webkit-filter: brightness(75%);
+}
+
+.youtube-player .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+    cursor: pointer;
+}

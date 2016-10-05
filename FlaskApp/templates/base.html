@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Josh's Blogspace</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="{{ url_for('static', filename='coffee-script.js') }}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+    <script src="{{ url_for('static', filename='youtube.js')}}"></script>
+    {% block js %}{% endblock %}
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">
+        <h1><a href="{{ url_for('index') }}">Josh's Blogspace</a></h1>
+        <div id="nav">
+            <a href="{{ url_for('who_am_i') }}">Who am I?</a> - <a href="{{ url_for('blog_posts') }}">Blog Posts</a> - <a href="{{ url_for('random') }}">Randomness</a> - <a href="https://github.com/josh-gree/">Github</a> - <a href="https://twitter.com/JoshGhalgh">Twitter</a>
+        </div>
+    </div>
+    {% block content %}{% endblock %}
+</body>
+</html>
