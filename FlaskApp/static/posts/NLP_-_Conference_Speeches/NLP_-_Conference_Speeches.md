@@ -87,6 +87,7 @@ similarity
 0.28867513459481287
 </pre></code>
 
+## Labour party conference speeches.
 <div id="plot_lab" align="center"></div>
 
 <div id="tooltip_lab" class="hidden">
@@ -94,10 +95,11 @@ similarity
     <p><span id="sp1">0</span></p>
     <p><span id="sp2">0</span></p>
 </div>
+
 </br>
 </br>
 
-
+## Conservative party conference speeches.
 <div id="plot_con" align="center"></div>
 
 <div id="tooltip_con" class="hidden">
@@ -105,13 +107,26 @@ similarity
     <p><span id="sp1">0</span></p>
     <p><span id="sp2">0</span></p>
 </div>
+
 </br>
 </br>
 
-
+## Liberal Democrat party conference speeches.
 <div id="plot_libdem" align="center"></div>
 
 <div id="tooltip_libdem" class="hidden">
+    <p><strong>Speech Similarity: </strong><span id="sim">0</span></p>
+    <p><span id="sp1">0</span></p>
+    <p><span id="sp2">0</span></p>
+</div>
+
+</br>
+</br>
+
+## State of the union
+<div id="plot_sou" align="center"></div>
+
+<div id="tooltip_sou" class="hidden">
     <p><strong>Speech Similarity: </strong><span id="sim">0</span></p>
     <p><span id="sp1">0</span></p>
     <p><span id="sp2">0</span></p>

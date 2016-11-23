@@ -1,4 +1,4 @@
-from mongoengine import Document, StringField, DateTimeField, ListField
+from mongoengine import Document, StringField, DateTimeField, ListField, IntField, FloatField
 
 class Post(Document):
     title = StringField()
@@ -15,3 +15,9 @@ class SpotifyAuth(Document):
     username = StringField()
     access_token = StringField()
     refresh_token = StringField()
+
+class MonzoTrans(Document):
+    amount = FloatField()
+    time = DateTimeField()
+    category = StringField()
+    name = StringField()
