@@ -83,6 +83,11 @@ def blog_posts():
 
     return render_template("blog_posts.html",title="My Blog Posts",posts = posts)
 
+@app.route('/colombia/')
+def colombia():
+    text = open(posts_dir + 'colombia.md').read()
+    return render_template("colombia.html",content=commonmark(text))
+
 @app.route('/blog_posts/<title>/')
 def blog_post_(title):
     post = Post.objects(title = remove_underscore(title))[0]

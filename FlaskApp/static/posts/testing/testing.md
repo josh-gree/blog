@@ -1,0 +1,1 @@
+<div id="mychart" align="center"><svg style="height:500px;width:1000px"></svg></div>
